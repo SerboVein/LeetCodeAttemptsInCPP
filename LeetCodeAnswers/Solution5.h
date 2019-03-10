@@ -1,6 +1,7 @@
 #pragma once
 #ifndef SOLUTION5_H
 #define SOLUTION5_H
+
 #include <string>
 #include <vector>
 

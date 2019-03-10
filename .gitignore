@@ -1,0 +1,11 @@
+
+*.opendb
+.vs/LeetCodeAnswers/v15/Browse.VC.db
+x64/Debug/
+*.pdb
+*.idb
+*.tlog
+*.obj
+*.log
+*.filters
+*.filters

@@ -3,10 +3,10 @@
 
 #include "pch.h"
 #include <iostream>
-#include "Solution166.h"
-#include "Solution5.h"
+#include "Solution166.h" //166. Fraction to Recurring Decimal
+#include "Solution5.h" //longest sub palindrome
+#include "Solution214.h" //shortest palindrome
 
-//166. Fraction to Recurring Decimal
 
 
 
@@ -16,7 +16,8 @@ int main()
 {
 	Solution5  solution5;
 	Solution166 solution166;
-	std::cout << "result:  " << solution5.longestPalindrome("") << std::endl;
+	Solution214 solution214;
+	std::cout << "result:  " << solution214.shortestPalindrome("abcd") << std::endl;
     std::cout << "Hello World!\n"; 
 }
 
