@@ -4,7 +4,7 @@
 #include "pch.h"
 #include <iostream>
 #include "Solution166.h"
-
+#include "Solution5.h"
 
 //166. Fraction to Recurring Decimal
 
@@ -14,8 +14,9 @@
 
 int main()
 {
+	Solution5  solution5;
 	Solution166 solution166;
-	std::cout << "result:  " << solution166.fractionToDecimal(4,333) << std::endl;
+	std::cout << "result:  " << solution5.longestPalindrome("") << std::endl;
     std::cout << "Hello World!\n"; 
 }
 

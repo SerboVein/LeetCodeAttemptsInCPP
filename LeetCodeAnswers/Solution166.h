@@ -19,6 +19,7 @@ public:
 		dummy = denominator;
 		unsigned long int absdenominator = abs(dummy);
 
+
 		result += to_string(absnumerator / absdenominator);
 		unsigned long int remainder = absnumerator - absnumerator / absdenominator * absdenominator;
 		if (remainder)
