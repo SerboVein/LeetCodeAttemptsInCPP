@@ -154,6 +154,8 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="Solution166.h" />
     <ClInclude Include="Solution214.h" />
+    <ClInclude Include="Solution28.h" />
+    <ClInclude Include="Solution459.h" />
     <ClInclude Include="Solution5.h" />
   </ItemGroup>
   <ItemGroup>

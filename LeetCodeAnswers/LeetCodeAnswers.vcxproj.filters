@@ -27,6 +27,12 @@
     <ClInclude Include="Solution214.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Solution28.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution459.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
