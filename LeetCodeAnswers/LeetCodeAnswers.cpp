@@ -7,8 +7,8 @@
 #include "Solution5.h" //longest sub palindrome
 #include "Solution214.h" //shortest palindrome
 #include "Solution459.h"
-
-
+#include "Solution999.h"
+#include "Solution409.h"
 
 
 
@@ -18,8 +18,11 @@ int main()
 	Solution166 solution166;
 	Solution214 solution214;
 	Solution459 solution459;
+	Solution999 solution999;
+	Solution409 solution409;
 
-	std::cout << "result:  " << solution459.repeatedSubstringPattern("abab") << std::endl;
+	std::cout << "result:" << solution409.longestPalindrome("abccccdd") << std::endl;
+//	std::cout << "result:  " << solution999.numRookCaptures(chessBoard) << std::endl;
     std::cout << "Hello World!\n"; 
 }
 
