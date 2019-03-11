@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Solution13.h" />
     <ClInclude Include="Solution166.h" />
     <ClInclude Include="Solution214.h" />
     <ClInclude Include="Solution28.h" />

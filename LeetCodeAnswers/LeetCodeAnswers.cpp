@@ -9,7 +9,7 @@
 #include "Solution459.h"
 #include "Solution999.h"
 #include "Solution409.h"
-
+#include "Solution13.h"
 
 
 int main()
@@ -20,6 +20,10 @@ int main()
 	Solution459 solution459;
 	Solution999 solution999;
 	Solution409 solution409;
+	Solution13 solution13;
+
+	std::cout << "result:" << solution13.romanToInt("MCMXCIV");
+	return 0;
 
 	std::cout << "result:" << solution409.longestPalindrome("abccccdd") << std::endl;
 //	std::cout << "result:  " << solution999.numRookCaptures(chessBoard) << std::endl;
