@@ -4,6 +4,7 @@
 
 #include <map>
 #include <vector>
+#include <unordered_map>
 #include <algorithm>
 using namespace std;
 
@@ -40,7 +41,7 @@ struct myclass {
 
 class Solution508 {
 public:
-	int getSubTreeSum(TreeNode* thisNode, map<int, int> &Hist)
+	int getSubTreeSum(TreeNode* thisNode, unordered_map<int, int> &Hist)   //unordered_map is much better, got 99.01 better time efficiency 
 	{
 		int Sum = thisNode->val;
 		if (thisNode->left)
@@ -57,7 +58,7 @@ public:
 		if (!root)
 			return result;
 
-		map<int, int> Hist;
+		unordered_map<int, int> Hist;
 		getSubTreeSum(root, Hist);
 		vector<PAIR> name_score_vec(Hist.begin(), Hist.end());
 		sort(name_score_vec.begin(), name_score_vec.end(), CmpByValue());
