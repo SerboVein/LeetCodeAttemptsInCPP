@@ -4,6 +4,7 @@
 
 #include <map>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 /**
@@ -23,14 +24,21 @@ struct TreeNode {
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+typedef pair<int, int> PAIR;
 
 struct CmpByValue {
-	bool operator()(const pair<int, int>& lhs, const pair<int, int>& rhs) {
-		return lhs.second < rhs.second;
+	bool operator()(const PAIR& k1, const PAIR& k2)const {
+		return k1.second > k2.second;
 	}
 };
 
-class Solution {
+struct myclass {
+	bool operator()(const pair<int, int>& lhs, const pair<int, int>& rhs) {
+		return lhs.second < rhs.second;
+	}
+}myobject;
+
+class Solution508 {
 public:
 	int getSubTreeSum(TreeNode* thisNode, map<int, int> &Hist)
 	{
@@ -45,15 +53,26 @@ public:
 	}
 
 	vector<int> findFrequentTreeSum(TreeNode* root) {
+		vector<int> result = {};
+		if (!root)
+			return result;
+
 		map<int, int> Hist;
 		getSubTreeSum(root, Hist);
-		sort(Hist.begin(), Hist.end(), CmpByValue());
-		vector<int> result = {};
+		vector<PAIR> name_score_vec(Hist.begin(), Hist.end());
+		sort(name_score_vec.begin(), name_score_vec.end(), CmpByValue());
+		int val = name_score_vec[0].second;
+		for (int i = 0; i < name_score_vec.size(); i++)
+		{
+			if (name_score_vec[i].second != val)
+				break;
+
+			result.push_back(name_score_vec[i].first);
+		}
+
 		return result;
 	}
 };
 
-
 #endif
-
 #pragma once
