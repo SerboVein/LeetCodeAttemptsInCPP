@@ -2,6 +2,8 @@
 #ifndef SOLUTION904_H
 #define SOLUTION904_H
 #include <vector>
+#include <stack>
+#include <queue>
 
 using namespace std;
 
