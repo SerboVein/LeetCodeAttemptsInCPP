@@ -7,42 +7,32 @@ using namespace std;
 
 class Solution930 {
 public:
-	int calcSubarraySum(vector<int> & A, int start, int end)
-	{
-		int sum = 0;
-		for (int i = start; i <= end; i++)
-			sum += A[i];
+	class Solution {
+	public:
 
-		return sum;
-	}
+		int numSubarraysWithSum(vector<int>& A, int S) {
+			int numSubarray = 0;
+			int firstValidEnd = 0;
 
-	vector<int> BuildScissorVec(vector<int> & A)
-	{
-		int thisZeroCount = 0;
-		vector<int> scissorVec;
-		for (auto a : A)
-		{
-			if (a == 1)
+			for (int start = 0; start < A.size(); start++)
 			{
-				scissorVec.push_back(thisZeroCount);
-				thisZeroCount = 0;
+				int sums = 0;
+				for (int end = firstValidEnd; end < A.size(); end++)
+				{
+					sums += A[end];
+					if (sums == S)
+					{
+						numSubarray++;
+						if (A[end] == 1)
+							firstValidEnd = end;
+					}
+					else if (sums > S)
+						break;
+				}
 			}
-			else
-				thisZeroCount++;
+			return numSubarray;
 		}
-		scissorVec.push_back(thisZeroCount);
-
-	}
-
-	int numSubarraysWithSum(vector<int>& A, int S) {
-		int numSubarray = 0;
-		for (int start = 0; start < A.size(); start++)
-			for (int end = start; end < A.size(); end++)
-				if (calcSubarraySum(A, start, end) == S)
-					numSubarray++;
-
-		return numSubarray;
-	}
+	};
 };
 
 #endif

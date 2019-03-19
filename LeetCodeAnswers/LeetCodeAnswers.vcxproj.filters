@@ -42,6 +42,45 @@
     <ClInclude Include="Solution13.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Solution206.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution804.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution977.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution295.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution707.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution965.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution219.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution67.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution66.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution508.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution1002.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution111.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Solution572.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

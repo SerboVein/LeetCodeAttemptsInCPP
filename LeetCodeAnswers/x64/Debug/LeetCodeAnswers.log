@@ -1,8 +1,4 @@
 ﻿  LeetCodeAnswers.cpp
-c:\users\tynnic\documents\visual studio 2017\projects\leetcodeanswers\leetcodeattemptsincpp\leetcodeanswers\solution166.h(33): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
-c:\users\tynnic\documents\visual studio 2017\projects\leetcodeanswers\leetcodeattemptsincpp\leetcodeanswers\leetcodeanswers.cpp(21): warning C4101: “solution999”: 未引用的局部变量
-c:\users\tynnic\documents\visual studio 2017\projects\leetcodeanswers\leetcodeattemptsincpp\leetcodeanswers\leetcodeanswers.cpp(17): warning C4101: “solution5”: 未引用的局部变量
-c:\users\tynnic\documents\visual studio 2017\projects\leetcodeanswers\leetcodeattemptsincpp\leetcodeanswers\leetcodeanswers.cpp(19): warning C4101: “solution214”: 未引用的局部变量
-c:\users\tynnic\documents\visual studio 2017\projects\leetcodeanswers\leetcodeattemptsincpp\leetcodeanswers\leetcodeanswers.cpp(20): warning C4101: “solution459”: 未引用的局部变量
-c:\users\tynnic\documents\visual studio 2017\projects\leetcodeanswers\leetcodeattemptsincpp\leetcodeanswers\leetcodeanswers.cpp(18): warning C4101: “solution166”: 未引用的局部变量
+c:\users\tynnic\documents\visual studio 2017\projects\leetcodeanswers\leetcodeattemptsincpp\leetcodeanswers\solution572.h(3): warning C4005: “NULL”: 宏重定义
+  d:\visualstudio2017\vc\tools\msvc\14.16.27023\include\vcruntime.h(220): note: 参见“NULL”的前一个定义
   LeetCodeAnswers.vcxproj -> C:\Users\tynnic\Documents\Visual Studio 2017\Projects\LeetCodeAnswers\LeetCodeAttemptsInCPP\x64\Debug\LeetCodeAnswers.exe
